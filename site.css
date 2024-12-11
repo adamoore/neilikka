@@ -1,0 +1,267 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    height: 100%;
+   } 
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+  }
+
+h1, h2, h3, h4, h5, h6  {
+  text-align: center;
+  font-family: 'Cinzel Decorative', cursive;
+}
+  
+ footer {
+  position: sticky;
+  top: 100vh;
+  background-color: #41521F;
+  color: #D1AC00;
+  background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 9%, rgba(68,101,42,1) 35%, rgb(245, 181, 224) 100%);
+  width: 100%;
+  padding: 4px;
+  text-align: center;
+ }
+
+  nav {
+    overflow: hidden;
+    background-color: #44652A;
+    background: rgb(0,0,0);
+      background: linear-gradient(90deg, rgba(0,0,0,1) 9%, rgba(68,101,42,1) 35%, rgba(245,181,224) 100%);
+    color: #D1AC00;
+    font-family: 'Cinzel Decorative', cursive;
+    border-radius : 10px;
+  }
+  
+  nav a {
+    display: inline-block;
+    color: #D1AC00;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  nav a:not(:first-child) {display: none;}
+  
+  nav a.icon {
+    float: right;
+    display: block;
+  }
+
+  nav a.active {
+    background-color: #EDC9FF;
+    color: #D1AC00;
+    font-weight: bold; 
+}
+
+  nav.responsive {position: relative;}
+
+  nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+.fa.fa-bars {
+    font-size: 30px;
+    color: #D1AC00;
+    padding: 10px;
+}
+  @media screen and (min-width: 576px) {
+    nav a.icon { display: none; }
+
+    nav a:not(.icon) {
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      nav a:hover {
+        background-color: #D991BA;
+        color: #41521F;
+      }
+
+  }
+
+  @media screen and (max-width: 576px) {
+    nav a.icon {
+      display: block;
+    }
+  }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.neilikkakuva {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 550px;
+  border-radius: 50px 0px 50px 0px;
+}
+
+.kuva {
+  width: 250px;
+  height: 350px;
+  border-radius: 50px 0px 50px 0px;
+}
+
+.neilikkafoot {
+  width: 150px;
+  height: 100px;
+}
+
+.uutiset {
+  background-color: #aa04863d;
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+#newsletter {
+  width: 25px;
+  background-color: #D1AC00;
+  color: #EDC9FF;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+  background: rgb(0,0,0);
+      background: linear-gradient(90deg, rgba(0,0,0,1) 9%, rgba(68,101,42,1) 35%, rgba(245,181,224) 100%);
+  border-radius: 10px;
+  max-width: fit-content;
+}
+
+th  {
+  display: inline-block;
+  justify-content: space-evenly;
+  font-family: "Poppins", sans-serif;
+}
+
+td {
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+tbody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #aa04863d ;
+  border: 3px solid #41521F;
+  text-wrap: wrap;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.helsinki {
+  float: left;
+  background-color: #aa04863d;
+  border: 3px solid #41521F;
+  border-radius: 10px;
+  text-align: center;
+  margin: 50px;
+  padding: 3px;
+}
+
+.espoo {
+  float: right;
+  background-color: #aa04863d;
+  border: 3px solid #41521F;
+  border-radius: 10px;
+  text-align: center;
+  margin: 50px;
+  padding: 3px;
+}
+ 
+form {
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-form {
+  width: auto;
+  margin: auto;
+  padding: 20px;
+  background-color: #aa04863d;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px 10px;
+}
+.contact-form input, .contact-form select, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Poppins',sans-serif;
+}
+.contact-form button, button {
+  width: 100%;
+  padding: 10px;
+  background-color: #41521F;
+  color: #D991BA;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.contact-form button:hover {
+  background-color: #aa04863d;
+}
+.contact-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reklomake {
+  background-color: #aa04863d ;
+  border-radius: 10px;
+}
+
+  
