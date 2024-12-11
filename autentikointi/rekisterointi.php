@@ -45,13 +45,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'dashantilife@gmail.com'; 
-            $mail->Password = 'Herukka88';  // Tämä kannattaa salata tai käyttää ympäristömuuttujaa
+            $mail->Username = '@gmail.com'; 
+            $mail->Password = '';  // Tämä kannattaa salata tai käyttää ympäristömuuttujaa
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
             // Vastaanottajat
-            $mail->setFrom('dashantilife@gmail.com', 'Neilikka'); // Lähettäjän tiedot
+            $mail->setFrom('@gmail.com', 'Neilikka'); // Lähettäjän tiedot
             $mail->addAddress($email);  // Lähetetään sähköposti käyttäjälle
 
             // Sähköpostin sisältö
